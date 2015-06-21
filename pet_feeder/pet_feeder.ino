@@ -1,14 +1,27 @@
+/*
+ * Projeto Pet Feeder utilizando o Intel Edison
+ * 
+ * Desenvolvido por:
+ *    - Antonio Carlos Falcao Petri
+ *    - Christianno Guimaraes
+ *    - Gabriela Mattos
+ *    - Murilo Ferraz de Almeida
+ *    - Samuel Pereira
+ * 
+ * Apresentado no Intel IoT RoadShow Sao Paulo - 2015
+ * #IntelMaker
+ */
+
 #include <SPI.h>
-
 #include <Ethernet.h>
-#include <Twitter.h>
 #include <Servo.h>
-#include <TimerOne.h>
 
-#include "rgb_lcd.h"
-#include "hcsr02.h"
+#include <Twitter.h>
+#include <hcsr02.h>
 
-#define TOKEN_KEY "TOKEN_KEY"
+#include <rgb_lcd.h>
+
+#define TOKEN_KEY "SEU_TOKEN_AQUI"
 
 #define DEBUG 0
 
@@ -125,4 +138,5 @@ void feedThePet () {
   activateDispenser(openedTime);
   sendMessage();
 }
+
 
