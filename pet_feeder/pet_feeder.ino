@@ -17,7 +17,7 @@
 #include <Servo.h>
 
 #include <Twitter.h>
-#include <hcsr02.h>
+#include <hcsr04.h>
 
 #include <rgb_lcd.h>
 
@@ -32,7 +32,7 @@
 byte mac[] = { 0xAA, 0xAB, 0xDE, 0x1F, 0x26, 0x5D };
 
 rgb_lcd lcd;
-HCSR02 ultrasonic(8,7);
+HCSR04 ultrasonic(8,7);
 Servo servo;
 
 Twitter twitter(TOKEN_KEY);
